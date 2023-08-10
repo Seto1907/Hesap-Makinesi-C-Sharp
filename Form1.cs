@@ -19,7 +19,7 @@ namespace Hesap_Makinesi
         {
             InitializeComponent();
         }
-
+//Buradan itibaren sayıların ekrana yazdırılmasını sağladım.
         private void sayi0_Click(object sender, EventArgs e)
         {
             if (_temizle == true)
@@ -129,7 +129,7 @@ namespace Hesap_Makinesi
             if (cikti.Text == "0") { cikti.Text = ""; }
             cikti.Text += "9";
         }
-
+//Buradan itibaren matematik işlemlerini ayarladım.
         private void topla_Click(object sender, EventArgs e)
         {
             _islem = '+';
@@ -205,7 +205,7 @@ namespace Hesap_Makinesi
         {
             cikti.Text = "0";
         }
-
+//Buradan itibaren sayıların ve matematik operatörlerinin klavye üzerinden de kullanılabilmesini sağladım.
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad0 || e.KeyCode == Keys.D0)
